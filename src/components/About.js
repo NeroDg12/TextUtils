@@ -27,7 +27,10 @@ export default function About() {
   }
 
   return (
+  <>
+    <h1 className='text-3xl font-bold pt-4'>About Us</h1>
     <div className='mt-10' style={myStyles} >
+      
       <div id="accordionExample">
         <div
           className="rounded-t-lg border">
@@ -176,10 +179,11 @@ export default function About() {
         </div>
       </div>
       <div className='mt-4 pl-5'>
-      <button type="button" onClick={toggleMode} class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">{btn}</button>
+      <button type="button" onClick={toggleMode} className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">{btn}</button>
       </div>
 
       
     </div>
+  </>
   )
 }

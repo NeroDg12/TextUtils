@@ -1,11 +1,11 @@
 
 import './App.css';
 import Alert from './components/Alert';
-// import About from './components/About';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React, {useState} from 'react';
-// import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 
 
@@ -56,12 +56,12 @@ function App() {
 
       <Alert alert = {alert}/>
       <div className="container w-3/4 pl-60">
-      <TextForm  showAlert = {showAlert} heading = "Enter your text here" mode = {mode}/>
-        {/* <Routes> 
-          <Route path="/" element={<TextForm  showAlert = {showAlert} heading = "Enter your text here" mode = {mode}/>}></Route>
+      
+        <Routes> 
+          <Route path="/" element={<TextForm  showAlert = {showAlert} heading = "TextUtils- Word Counter,Character Counter" mode = {mode}/>}></Route>
           <Route path="/about" element={<About/>}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-        </Routes> */}
+          {/* <Route path="/contact" element={<Contact />}></Route> */}
+        </Routes>
       </div>
 
       
